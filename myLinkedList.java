@@ -2,7 +2,7 @@ import java.util.Objects;
 
 public class myLinkedList<E> {
 
-    private No<E> primeiro;
+    protected No<E> primeiro;
     protected No<E> ultimo;
     protected int size;
 
