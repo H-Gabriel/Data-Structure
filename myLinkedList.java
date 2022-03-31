@@ -3,8 +3,8 @@ import java.util.Objects;
 public class myLinkedList<E> {
 
     private No<E> primeiro;
-    private No<E> ultimo;
-    private int size;
+    protected No<E> ultimo;
+    protected int size;
 
     public myLinkedList() {
         this.primeiro = null;
