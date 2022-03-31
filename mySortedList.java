@@ -12,8 +12,6 @@ public class mySortedList<E extends Comparable<E>> {
     }
 
     public void add(E element) {
-        No<E> novo = new No<>(element);
-
         if(this.primeiro == null) {
             add(this.size, element);
         }
@@ -82,15 +80,6 @@ public class mySortedList<E extends Comparable<E>> {
         }
         return false;
     }
-
-    /*public boolean containsSize(String element) {
-        No<E> aux = this.primeiro;
-        for(int i = 0; i < this.size; i++) {
-            if(aux.getDado().length() == element.length()) return true;
-            aux = aux.getProximo();
-        }
-        return false;
-    }*/
 
     public void remove(int index){
         No<E> aux = this.primeiro;
