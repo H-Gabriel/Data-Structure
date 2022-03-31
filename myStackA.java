@@ -1,8 +1,8 @@
 import java.util.EmptyStackException;
 
-public class myStack<E> extends myArrayList<E> {
+public class myStackA<E> extends myArrayList<E> {
 
-    public myStack() {
+    public myStackA() {
         this.size = 0;
     }
 
@@ -13,7 +13,7 @@ public class myStack<E> extends myArrayList<E> {
     public E pop() {
         if(size != 0) {
             E element = peek();
-            remove(size - 1);
+            remove(this.size - 1);
             return element;
         }
         return null;
@@ -24,7 +24,7 @@ public class myStack<E> extends myArrayList<E> {
         if(this.size == 0) {
             throw new EmptyStackException();
         }
-        return (E) this.v[size - 1];
+        return (E) this.v[this.size - 1];
     }
 
 }
