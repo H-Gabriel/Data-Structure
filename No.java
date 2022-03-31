@@ -1,4 +1,4 @@
-public class No<E extends Comparable<E>> implements Comparable<No<E>> {
+public class No<E> {
 
     private final E dado;
     private No<E> proximo;
@@ -19,9 +19,5 @@ public class No<E extends Comparable<E>> implements Comparable<No<E>> {
     public No<E> getProximo() {
         return this.proximo;
     }
-
-    public int compareTo(No<E> no) {
-        return dado.compareTo(no.getDado());
-    }
-
+    
 }
