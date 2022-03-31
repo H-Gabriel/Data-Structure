@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public class myLinkedList<E extends Comparable<E>> {
+public class myLinkedList<E> {
 
     private No<E> primeiro;
     private No<E> ultimo;
