@@ -1,8 +1,8 @@
 import java.util.Objects;
 
 public class myArrayList<E> {
-    private Object[] v;
-    private int size;
+    protected Object[] v;
+    protected int size;
 
     public myArrayList(){
         this.v = new Object[5];
