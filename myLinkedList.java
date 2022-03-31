@@ -79,7 +79,12 @@ public class myLinkedList<E> {
 
         if(index < this.size) {
             if(index == 0) {
-                this.primeiro = aux.getProximo();
+                if(this.size != 1) {
+                    this.primeiro = aux.getProximo();
+                } else {
+                    this.primeiro = null;
+                    this.ultimo = null;
+                }
             }
             else{
                 aux.setProximo(aux.getProximo().getProximo());
