@@ -4,10 +4,16 @@ public class myArrayList<E> {
     protected Object[] v;
     protected int size;
 
-    public myArrayList(){
+    public myArrayList() {
         this.v = new Object[5];
         this.size = 0;
     }
+    
+    public myArrayList(Object[] v) {
+        this.v = v;
+        this.size = v.length;
+    }
+
 
     public void add(E element) {
         add(this.size, element);
