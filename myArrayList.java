@@ -82,10 +82,4 @@ public class myArrayList<E> {
         }
         return -1;
     }
-
-    @Override
-    public String toString() {
-        return "meu nome é cleitin";
-    }
-
 }
